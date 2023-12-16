@@ -1,7 +1,6 @@
 {
   "name": "template-repository",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "deploy": "git subtree push --prefix dist origin gh-pages",
@@ -13,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "date-fns": "^2.30.0",
     "eslint": "^8.55.0",
     "eslint-config-node": "^4.1.0",
     "eslint-config-prettier": "^9.1.0",
@@ -25,5 +25,6 @@
   },
   "eslint.options": {
     "ignorePattern": "webpack.config.js"
-  }
+  },
+  "description": ""
 }
