@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+:root {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #191919;
+  color: white;
+  font-family: 'Poppins', 'Montserrat', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.title {
+  justify-self: center;
+  margin-left: 30%;
+  font-size: 5rem;
+}
+
+.change-city {
+  justify-self: end;
+  position: relative;
+}
+
+.search-btn {
+  cursor: pointer;
+  position: absolute;
+  left: 185px;
+  bottom: 0.5px;
+}
