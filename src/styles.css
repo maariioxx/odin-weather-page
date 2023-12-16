@@ -10,15 +10,18 @@ body {
   font-family: 'Poppins', 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 header {
+  width: 100vw;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .title {
-  justify-self: center;
-  margin-left: 30%;
+  text-align: right;
+  margin-right: 20%;
   font-size: 5rem;
 }
 
@@ -32,4 +35,81 @@ header {
   position: absolute;
   left: 185px;
   bottom: 0.5px;
+}
+
+.main-city-info {
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  border: 4px solid white;
+  justify-content: space-around;
+  width: 70vw;
+  height: 35vh;
+}
+
+.city-data,
+.city-current {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.city-name {
+  font-size: 4rem;
+}
+
+.city-time {
+  margin-top: 0;
+  font-size: 3rem;
+}
+
+.city-current > h2,
+h3 {
+  margin: 5px;
+}
+
+.city-condition {
+  font-size: 2rem;
+}
+
+.city-condition-image {
+  width: 130px;
+  height: 130px;
+}
+
+.city-temperature {
+  font-size: 1.5rem;
+}
+
+.next-days-forecast {
+  margin-top: 50px;
+  display: grid;
+  justify-content: center;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.forecast-date,
+.forecast-condition {
+  font-size: 1.6rem;
+}
+
+.forecast-condition {
+  width: 140px;
+}
+
+.forecast {
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.forecast > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.forecast > div > h3:nth-child(2) {
+  font-size: 1.5rem;
 }

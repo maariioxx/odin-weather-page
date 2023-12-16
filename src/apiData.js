@@ -11,7 +11,7 @@ function CORSSolve() {
 async function getAPIData(city) {
   CORSSolve();
   const promise = await fetch(
-    `https://api.weatherapi.com/v1/forecast.json?key=f761d4a415a94079961121143231412&q=${city}&days=3&aqi=yes&alerts=no`,
+    `https://api.weatherapi.com/v1/forecast.json?key=f761d4a415a94079961121143231412&q=${city}&days=4&aqi=yes&alerts=no`,
     {
       mode: 'cors',
     }
